@@ -116,6 +116,13 @@
 
             label = "TMUX";
         };
+
+        compose_key_ae: compose_key_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp A &kp LS(SINGLE_QUOTE)>;
+            label = "COMPOSE_KEY_AE";
+        };
     };
 
     keymap {
@@ -180,7 +187,7 @@
         nav_layer {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans  &trans  &bt BT_CLR  &rgb_ug RGB_TOG  &trans  &trans  &studio_unlock  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &compose_key_ae  &trans  &trans  &bt BT_CLR  &rgb_ug RGB_TOG  &trans  &trans  &studio_unlock  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
