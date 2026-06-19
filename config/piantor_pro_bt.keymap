@@ -138,11 +138,11 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &kp A  &kp S  &kp D  &jholdtap LEFT_SHIFT F  &kp G  &kp H  &jholdtap LEFT_SHIFT J  &kp K  &kp L  &kp SEMI  &none  &none  &jholdtap LEFT_META Z  &jholdtap LALT X  &jholdtap LCTRL C  &kp V  &kp B  &kp N  &kp M  &jholdtap LCTRL COMMA  &jholdtap LALT DOT  &jholdtap LMETA FSLH  &none  &none  &lt 5 SPACE  &kp TAB  &lt 4 ENTER  &jlayertap 3 BACKSPACE  &kp DELETE
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &kp A  &kp S  &kp D  &jholdtap LEFT_SHIFT F  &kp G  &kp H  &jholdtap LEFT_SHIFT J  &kp K  &kp L  &kp SEMI  &none  &none  &jholdtap LEFT_META Z  &jholdtap LALT X  &jholdtap LCTRL C  &kp V  &kp B  &kp N  &kp M  &jholdtap LCTRL COMMA  &jholdtap LALT DOT  &jholdtap LMETA FSLH  &none  &none  &lt 1 SPACE  &kp TAB  &lt 4 ENTER  &jlayertap 3 BACKSPACE  &kp DELETE
             >;
         };
 
-        lower_layer {
+        nav_layer {
             display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &kp LEFT_META  &kp LEFT_ALT  &kp LCTRL  &studio_unlock  &bt BT_CLR  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &compose_key_ae  &trans  &trans  &kp LEFT_META  &kp LEFT_ALT  &kp LCTRL  &studio_unlock  &bt BT_CLR  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -181,13 +181,6 @@
             display-name = "EXTRA 1";
             bindings = <
 &trans  &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(RBKT)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(SINGLE_QUOTE)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(EQUAL)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(GRAVE)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LS(MINUS)  &trans  &trans  &trans
-            >;
-        };
-
-        nav_layer {
-            display-name = "EXTRA 2";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &compose_key_ae  &trans  &trans  &bt BT_CLR  &rgb_ug RGB_TOG  &trans  &trans  &studio_unlock  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
