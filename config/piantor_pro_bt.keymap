@@ -122,6 +122,27 @@
             bindings = <&kp RALT &kp A &kp LS(SINGLE_QUOTE)>;
             label = "COMPOSE_KEY_AE";
         };
+
+        compose_key_oe: compose_key_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp O &kp LS(SINGLE_QUOTE)>;
+            label = "COMPOSE_KEY_OE";
+        };
+
+        compose_key_ue: compose_key_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp U &kp LS(SINGLE_QUOTE)>;
+            label = "COMPOSE_KEY_UE";
+        };
+
+        compose_key_s: compose_key_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp S &kp S>;
+            label = "COMPOSE_KEY_S";
+        };
     };
 
     keymap {
@@ -151,7 +172,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &compose_key_ae  &trans  &trans  &kp LEFT_META  &kp LEFT_ALT  &kp LCTRL  &studio_unlock  &bt BT_CLR  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &compose_key_s  &compose_key_oe  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &compose_key_ae  &trans  &trans  &kp LEFT_META  &kp LEFT_ALT  &kp LCTRL  &studio_unlock  &bt BT_CLR  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans  &compose_key_ue  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
